@@ -1,2 +1,0 @@
-proyek: house price prediction
-latar belakang: harga rumah yang semakin mahal 
