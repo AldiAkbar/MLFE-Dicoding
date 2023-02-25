@@ -10,10 +10,6 @@ Dicoding merupakan salah satu perusahaan mitra dari program SIB Batch 3 dengan s
 6. [Belajar Membuat Front-End Web Untuk Pemula](https://www.dicoding.com/academies/315)
 7. [Belajar Fundamental Front End Development](https://www.dicoding.com/academies/163)
 
-
-> The overriding design goal for Markdown's
-
-
 ## Submission
 - Belajar Machine Learning untuk Pemula [click here]()
 - Belajar Pengembangan Machine Learning [click here]()
