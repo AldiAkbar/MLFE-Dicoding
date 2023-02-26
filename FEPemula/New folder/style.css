@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D3E50;
+    color: white;
+}
+
+.head_bar h1 {
+    width: 35%;
+    text-align: center;
+}
+
+.head_bar > .search {
+    width: 35%;
+}
+
+.head_bar > .search > form {
+    padding: 16px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.head_bar > .search > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.head_bar > .search > form > button {
+    background-color: white;
+    color: #2D3E50;
+    font-weight: bold;
+    border: 2px white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #2D3E50;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #2D3E50;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color: #2D3E50;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #2D3E50;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.book_shelf {
+    display: flex;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > .incomplete,
+.book_shelf > .complete {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px;
+}
+
+.book_shelf > .incomplete > h2,
+.book_shelf > .complete > h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #2D3E50;
+}
+
+.book_shelf > .incomplete > .book_list,
+.book_shelf > .complete > .book_list {
+    padding: 0px 16px 16px 16px;
+}
+
+.book_shelf > .incomplete > .book_list > .book_item,
+.book_shelf > .complete > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .incomplete > .book_list > .book_item > h3, p,
+.book_shelf > .complete > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .incomplete > .book_list > .book_item > .action > button,
+.book_shelf > .complete > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .incomplete > .book_list > .book_item > .action > .green,
+.book_shelf > .complete > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .incomplete > .book_list > .book_item > .action > .red,
+.book_shelf > .complete > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.freeze-layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.container-popup {
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #2D3E50;
+    border-radius: 5px;
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+}
+
+.container-popup > .header-popup {
+    color: #fff;
+    background-color: #2D3E50;
+    padding: 10px;
+}
+
+.container-popup > .body-popup {
+    padding: 10px;
+    line-height: 30px;
+}
+
+.container-popup > .footer-popup {
+    text-align: center;
+    padding: 3px 0;
+}
+
+.container-popup > .footer-popup > a {
+    text-decoration: none;
+    width: 100px;
+    margin: 0 10px;
+    padding: 3px 10%;
+    border: 1px solid #2D3E50;
+    font-weight: bold;
+}
+
+.container-popup > .footer-popup > .ok {
+    color: #fff;
+    background-color: #2D3E50;
+}
+
+.container-popup > .footer-popup > .cancel {
+    background-color: #fff;
+    color: #2D3E50;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .head_bar {
+        padding: 12px auto;
+    }
+    
+    .head_bar h1, 
+    .head_bar > .search {
+        width: 40%;
+    }
+
+    .book_shelf > .incomplete > .book_list > .book_item,
+    .book_shelf > .complete > .book_list > .book_item {
+        padding: 8px 8px 16px 8px;
+    }
+
+    .book_shelf > .incomplete > .book_list > .book_item > .action > button,
+    .book_shelf > .complete > .book_list > .book_item > .action > button {
+        font-size: 14px;
+    }
+
+    .container-popup {
+        left: 25%;
+        top: 55%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .head_bar {
+        display: inherit;
+    }
+
+    .head_bar h1{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .head_bar > .search {
+        width: 100%;
+    }
+
+    .head_bar > .search > form {
+        width: 100%;
+        display: flex;    
+        justify-content: center;
+    }
+
+    .book_shelf {
+        display: inherit;
+    }
+
+    .book_shelf > .incomplete,
+    .book_shelf > .complete {
+        width: 100%;
+    }
+
+    .container-popup {
+        left: 15%;
+        top: 120%;
+        width: 70%;
+    }
+}
