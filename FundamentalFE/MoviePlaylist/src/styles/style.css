@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 32px auto;
+  }
+
+  movie-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Medium Screen */
+  @media (min-width: 768px) {
+    movie-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+      
+  /* Large Screen */
+  @media (min-width: 992px) {
+    movie-list {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+  }

@@ -1,0 +1,7 @@
+pengguna melakukan search movie yang diinginkan, lalu ada tombol pilihan untuk memasukkan film tersebut ke dalam playlist waiting list movie, lalu jika sudah ditonton, masukkan ke dalam daftar movie yang sudah ditonton.
+
+
+List yang harus dilakukan untuk menyelesaikan final submission:
+- pikirin layout buat bagian daftar watchlist
+- buka dokumentasi dicoding bagian club list dan club item
+- buat file js object yang isinya daftar film yang sesuai API untuk simulasi reka ulang dari bagian search club sampai keluar hasilnya 

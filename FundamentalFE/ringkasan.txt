@@ -1,0 +1,3 @@
+Pada objek, keyword this mengembalikan nilai objeknya sendiri. this dapat digunakan untuk mengelola properti pada objeknya. Namun jika fungsi dipanggil tanpa menggunakan keyword new, keyword this bernilai global object (Window jika di browser).
+
+Sedangkan, jika menggunakan arrow functions, fungsi tersebut tidak akan pernah memiliki nilai this, yang artinya kita tidak pernah bisa membuat objek menggunakan arrow function. Jika kita menggunakan this pada arrow function maka nilai this tersebut merupakan nilai objek di mana arrow function itu berada.
